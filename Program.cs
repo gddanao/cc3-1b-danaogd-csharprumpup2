@@ -59,9 +59,7 @@ namespace CSharpRumpUp
             - {character3}, the genius billionaire, wearing {equipment3}.
             - {character4}, the supper soldier, using his frisbee {equipment4}.
             - {character5}, another assasin, with his {equipment5}.
-
-            They defended New York from the utter destruction that the dark force is upon it, and finally peace is brought back.
-            ";
+            They defended New York from the utter destruction that the dark force is upon it, and finally peace is brought back.";
 
             Console.WriteLine(story);
 
@@ -70,51 +68,71 @@ namespace CSharpRumpUp
             /*PART 2*/
             Console.WriteLine("PART 2");
 
-            // First
-            Console.WriteLine("PART 2 - 1");
-            Console.Write("Enter a number: ");
-            int n1 = Convert.ToInt32(Console.ReadLine());
+            // First/A
+            Console.WriteLine("A");
 
-            if (n1 <= 0)
+            Console.Write("Enter a positive integer: ");
+
+            if (int.TryParse(Console.ReadLine(), out int Input1) && Input1 > 0)
             {
-                Console.WriteLine("Invalid input");
-            }
-            else
-            {
-                Console.WriteLine("Number Pattern:");
-                for (int i = 1; i <= n1; i++)
+                for (int i = 1; i <= Input1; i++)
                 {
                     for (int j = 1; j <= i; j++)
                     {
-                        Console.Write(j + " ");
+                        Console.Write($"{j} ");
                     }
                     Console.WriteLine();
                 }
             }
-            //Second
-            Console.WriteLine("PART2 - 2");
-            Console.Write("Enter a number: ");
-            int userInput2 = Convert.ToInt32(Console.ReadLine());
-
-            int sum = 0;
-            for (int i = 1; i <= userInput2; i++)
+            else
             {
-                sum += i;
+                Console.WriteLine("Invalid input");
             }
-            Console.WriteLine($"Output: {sum}");
+            Console.WriteLine("====================");
 
-            //Third
-            Console.WriteLine("PART 2 - 3");
-            Console.Write("Enter a number: ");
-            int userInput3 = Convert.ToInt32(Console.ReadLine());
+            //Second/B
+            Console.WriteLine("B");
 
-            for (int i = userInput3; i >= 1; i--)
+            Console.Write("Enter a positive integer: ");
+
+            if (int.TryParse(Console.ReadLine(), out int Input2) && Input2 > 0)
             {
-                for (int j = 1; j <= i; j++)
+                int sum = 0;
+
+                for (int i = 1; i <= Input2; i++)
                 {
-                    Console.Write(j + " ");
+                    sum += i;
                 }
-                Console.WriteLine();
+
+                Console.WriteLine($"Input: {Input2}");
+                Console.WriteLine($"Formula: 1+2+...+{Input2}");
+                Console.WriteLine($"Output: {sum}");
+            }
+            else
+            {
+                Console.WriteLine("Invalid input");
+            }
+            Console.WriteLine("====================");
+
+            //Third/C
+            Console.WriteLine("C");
+
+            Console.Write("Enter a positive integer: ");
+
+            if (int.TryParse(Console.ReadLine(), out int Input3) && Input3 > 0)
+            {
+                for (int i = Input3; i >= 1; i--)
+                {
+                    for (int j = 1; j <= i; j++)
+                    {
+                        Console.Write($"{j} ");
+                    }
+                    Console.WriteLine();
+                }
+            }
+            else
+            {
+                Console.WriteLine("Invalid input");
             }
         }
     }
