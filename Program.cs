@@ -6,8 +6,8 @@ namespace CSharpRumpUp
     {
         static void Main(string[] args)
         {
-            /*PART 1*/
-            Console.WriteLine("PART 1");
+            //PART 1
+            Console.WriteLine("PART 1:");
 
             // Converts pounds to kilograms
             Console.Write("Enter weight in pounds(lbs): ");
@@ -15,17 +15,23 @@ namespace CSharpRumpUp
             double kilograms = pounds * 0.453592;
             Console.WriteLine($"Weight: {pounds} lbs = {kilograms} kg");
 
+            Console.WriteLine("========================================");
+
             // Converts miles to kilometers
             Console.Write("Enter distance in miles(mi): ");
             double miles = Convert.ToDouble(Console.ReadLine());
             double kilometers = miles * 1.60934;
             Console.WriteLine($"Distance: {miles} mi = {kilometers} km");
 
+            Console.WriteLine("========================================");
+
             // Converts Fahrenheit to Celsius
             Console.Write("Enter temperature in Fahrenheit(°F): ");
             double fahrenheit = Convert.ToDouble(Console.ReadLine());
             double celsius = (fahrenheit - 32) * 5 / 9;
             Console.WriteLine($"Temperature: {fahrenheit} °F = {celsius} °C");
+
+            Console.WriteLine("========================================");
 
             // Calculates the average age of students
             int totalAges = 0;
@@ -38,6 +44,8 @@ namespace CSharpRumpUp
             }
             double averageAge = (double)totalAges / 10;
             Console.WriteLine($"Ages of students: {string.Join(", ", studentAges)}\nAverage Age: {averageAge:F2}");
+
+            Console.WriteLine("========================================");
 
             // Avengers Fantasy Story
             string character1 = "Natasha Romanoff";
@@ -59,16 +67,18 @@ namespace CSharpRumpUp
             - {character3}, the genius billionaire, wearing {equipment3}.
             - {character4}, the supper soldier, using his frisbee {equipment4}.
             - {character5}, another assasin, with his {equipment5}.
-            They defended New York from the utter destruction that the dark force is upon it, and finally peace is brought back.";
+            They defended New York from the destruction that the dark force was upon it, 
+            and finally peace was brought back.
+            ";
 
             Console.WriteLine(story);
 
-            Console.WriteLine("--------------------------------------------------------------------------");
+            Console.WriteLine("=================================================================");
 
-            /*PART 2*/
-            Console.WriteLine("PART 2");
+            //PART 2
+            Console.WriteLine("PART 2:");
 
-            // First/A
+            // Right Triangle
             Console.WriteLine("A");
 
             Console.Write("Enter a positive integer: ");
@@ -88,9 +98,10 @@ namespace CSharpRumpUp
             {
                 Console.WriteLine("Invalid input");
             }
-            Console.WriteLine("====================");
 
-            //Second/B
+            Console.WriteLine("========================================");
+
+            //Addition
             Console.WriteLine("B");
 
             Console.Write("Enter a positive integer: ");
@@ -103,7 +114,6 @@ namespace CSharpRumpUp
                 {
                     sum += i;
                 }
-
                 Console.WriteLine($"Input: {Input2}");
                 Console.WriteLine($"Formula: 1+2+...+{Input2}");
                 Console.WriteLine($"Output: {sum}");
@@ -112,9 +122,10 @@ namespace CSharpRumpUp
             {
                 Console.WriteLine("Invalid input");
             }
-            Console.WriteLine("====================");
 
-            //Third/C
+            Console.WriteLine("========================================");
+
+            //Third Experiment
             Console.WriteLine("C");
 
             Console.Write("Enter a positive integer: ");
